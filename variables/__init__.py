@@ -30,11 +30,17 @@ print("multiplication =", multiplication)
 division = var / 2  # 10 / 2 = 5
 print("division = ", division)
 
-rise_to_power = var ** 2  # 10 ** 2 = 100
-print("rise_to_power =", rise_to_power)
+exponentiation = var ** 2  # 10 ** 2 = 100
+print("exponentiation =", exponentiation)
 
-dividing_by_the_remainder = var % 3  # 10 % 3 = 1 because 3 * 3 = 9 and the rest is 1
-print("dividing_by_the_remainder =", dividing_by_the_remainder)
+modulus = var % 3  # 10 % 3 = 1 because 3 * 3 = 9 and the rest is 1
+print("modulus =", modulus)
+
+floor_division = var // 7
+print("floor_division =", floor_division)  # 10 // 7 = 1 because 7 + 3 = 10 and 7 is only ones.
+
+floor_division = var // 2
+print("floor_division =", floor_division)  # 10 // 2 = 5 because 5 * 2 = 10 and 2 is 5 times in 10.
 
 print("\nConversion")
 # python language offer us, also, the possibility to convert from a "String" value to "Integer" value
@@ -138,4 +144,3 @@ print("value_string =", value_string)
 
 value_false_string = bool("False")
 print("value_false_string =", value_false_string)
-
