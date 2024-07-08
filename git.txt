@@ -1,7 +1,10 @@
 Here you will find all the git commands that I use to success add the file on my repozitory
 "cd" - it show you the current directory
 "ls" - it show you an a list all the files and directories that exist in the current directory
-"git add" - will add your file that you meantion to the current commit  
+'git config --global user.email "your@email.com"' - help the git platform to identify you
+'git config --global user.name "your name"' - help the git   platform to identify you
+'git add "filename"' - will add your file that you meantion to the current commit  
+"git add --all" - will add all your files to the current commit
 "git status" - will give you the details necessary to understand which is the status:
         example:
             if you used the command "git add" the status will be:
@@ -15,3 +18,4 @@ Here you will find all the git commands that I use to success add the file on my
             Untracked files:
             (use "git add <file>..." to include in what will be committed)
                     git.txt
+'git commit -m "your message"' - will push on the repository the file/files you added with command "git add"
