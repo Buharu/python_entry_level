@@ -22,3 +22,24 @@ On the "variables" package could be found example for:
    - declare, assign values
    - cast from other type of data
  - try block, how to handle error
+
+ Other type of variables:
+ - tuple:
+   - create a tuple with <b>tuple</b> function
+   - <b>type</b> function
+   - <b>len</b> function
+   - access an element with index
+   - <b>try</b> and <b>except</b> block
+   - <b>max</b> and <b>min</b> functions
+   - cross a tuple with <b>for</b> statment 
+   - error handle of <b>TypeError</b> and <b>AttributeError</b>
+ - set:
+   - create a set with <b>set</b> function
+   - create a <b>set from a list</b>
+   - <b>type and len</b> functions
+   - cross the set with <b>for</b> statment
+   - aggregation functions: <b>min, max, verification of an element in a set</b>
+   - update functions: <b>add, update, remove, discard, pop</b> 
+   - <b>error handel</b>
+   - Crowd Operations: union, intersection, difference
+
