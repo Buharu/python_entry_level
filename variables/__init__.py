@@ -130,11 +130,11 @@ print("value_minus_1 =", value_minus_1)
 value_float = bool(0.2)
 print("value_float =", value_float)
 
-value_empty_list = bool([])
-print("value_empty_list =", value_empty_list)
+value_empty_lista = bool([])
+print("value_empty_lista =", value_empty_lista)
 
-value_list = bool([1, 2, 3])
-print("value_list [1, 2, 3] =", value_list)
+value_lista = bool([1, 2, 3])
+print("value_lista [1, 2, 3] =", value_lista)
 
 value_empty_string = bool("")
 print("value_empty_string =", value_empty_string)
@@ -144,3 +144,191 @@ print("value_string =", value_string)
 
 value_false_string = bool("False")
 print("value_false_string =", value_false_string)
+
+# Build a list that containt all the number from 1 to 99 that are divisible with 2 or 3 or 5. The result that must you obtain:
+# Ex: For numbers from 1 to 10, result is [2, 3, 4, 5, 6, 8, 9]
+
+#  first step we create a empty lista
+lista = []
+count = 0
+for i in range(1, 100):
+    if i % 2 == 0 or i % 3 == 0 or i % 5 == 0:
+        lista.append(i)
+        count += 1
+
+# The result was save on "lista"
+print("lista= ", lista, ". Total = ", count)
+
+# How many characters are in the string presented below? (the spaces and punctuation marks are consider characters)
+# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae consectetur ligula. Ut at est non lacus auctor ornare et non odio. Vestibulum ac neque at velit lacinia consectetur eget non sem. Nam nec ligula ipsum. Donec tincidunt, mi a finibus commodo, ante sem ullamcorper nisl, sed mollis felis purus vel diam. Sed ultricies id metus.
+
+string_on_analysis = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae consectetur ligula. Ut at est non lacus auctor ornare et non odio. Vestibulum ac neque at velit lacinia consectetur eget non sem. Nam nec ligula ipsum. Donec tincidunt, mi a finibus commodo, ante sem ullamcorper nisl, sed mollis felis purus vel diam. Sed ultricies id metus." 
+print ("Length = ", len(string_on_analysis))
+
+# Transform all the characters from the string in caps
+# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus nulla pretium facilisis commodo. Praesent convallis mollis auctor. Maecenas vitae sapien id nunc sodales tincidunt.
+
+string_need_caps = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus nulla pretium facilisis commodo. Praesent convallis mollis auctor. Maecenas vitae sapien id nunc sodales tincidunt."
+print ("The new string: ", string_need_caps.upper())
+
+# You have the next string: my_string = "weekend". What will return the next sintaxe: my_string[::-1]
+
+my_string = "weekend"
+print("my_string = ", my_string[::-1])
+
+# You have the next lista: my_list = ['elem1', 'elem2', 44.5, [25, 41, 'python'], 999].
+# How can you accees the string "python"
+
+my_list = ['elem1', 'elem2', 44.5, [25, 41, 'python'], 999]
+lista_index_4 = my_list[3][2]
+print("The string is:", lista_index_4)
+
+# For the string sir = "telecad", what output will you have if you run "sir[3]"?
+sir = "telacad"
+print(sir[3])
+
+# For the string sir = "telacad", what output will you have if you run sir[:-1]?
+print(sir[:-1])
+
+# Which is the result after the run:
+# >>>sir=”telacad”
+# >>>sir.replace(“acad”,”emedicina”)
+sir.replace("acad","emedicina")
+print("sir = ", sir.replace("acad","emedicina"))
+
+# Which is the final value of t after the run?
+# >>>t=”telacad, academie, cursuri”
+# >>>t =  t.split(',')
+string_3_elements = "telacad, academie, cursuri"
+string_3_elements = string_3_elements.split(',')
+print(string_3_elements)
+
+# Which is the final valuew of s after the run?
+# >>>s=”telacad\n”
+# >>>s = s.strip()
+s="telacad\n"
+s = s.strip()
+print("S = ", s)
+
+#  What will display the next sintaxa?
+# >>> t = ""
+# >>> if len(t) == 0:
+# ...     print("the string t is empty")
+# ...
+
+t = ""
+if len(t) == 0:
+    print("the string t is empty")
+
+# Which is the result of you run:
+# >>>u=”email Bc@demy”
+# >>>u.upper()
+
+u="email Bc@demy"
+u = u.upper()
+
+print("u = ",u)
+
+# Which is the result if you run:
+# >>>ls=”SALUTARE, Vlad Lastname”
+# >>>ls.lower()
+
+ls = "SALUTARE, Vlad Lastname"
+ls = ls.lower()
+print("ls =", ls.lower())
+
+# Which is the result if you run:
+# >>>cap = "welcome to my github"
+# >>>cap.capitalize()
+
+cap = "welcome to my github"
+cap = cap.capitalize()
+
+print("cap =", cap)
+
+# Which is the result if you run:
+# >>>str1 = "how are you?"
+# >>>print(str1[::-1])
+
+str1 = "how are you?"
+print(str1[::-1])
+
+# Which is the result if you run:
+# >>> t = [1, 3, 5]
+# >>> len(t)
+
+t = [1, 3, 5]
+print(len(t))
+
+# Which is the result if you run
+# >>> t = [1, 3, 5]
+# >>> t[2] = 4
+# >>> t
+
+t = [1, 3, 5]
+t[2] = 4
+print("t =", t)
+
+# Which is the content of the lista t if you run:
+#  >>> t = [1, 3, 4]
+# >>> t.append("NI")
+
+t_1 = [1, 3, 4]
+print("t_1 =", t_1)
+t_1.append("NI")
+print("t_1 =", t_1)
+
+# Which elements will containts the lista t if you run:
+# >> t = [1, 3, 4]
+# >>> t = t + [4,5,6]
+
+t_3 = [1, 3, 4]
+t_4 = t_3 + [4, 5, 6]
+print("t_4 =", t_4)
+
+# Which is the result if you run
+# >>> t = [1, 3, 4]>
+# >>> t.pop(2)
+# >>> t
+
+t_5 = [1, 3, 4]
+t_5.pop(2)
+print("t_5 =", t_5)
+
+# Which order will the lista have if you will applay the function reverse?
+# >>> my_list = [1, 9, 7]
+# >>> my_list.reverse()
+# >>> my_list
+
+my_list = [1, 9, 7]
+my_list.reverse()
+print("my_list =", my_list)
+
+# Which will be the order in the next lista if you applay the function "sort"?
+# >>> my_list = [8, 17, -2, 11, 5]
+# >>> my_list.sort()
+# >>> my_list
+
+my_list = [8, 17, -2, 11, 5]
+my_list.sort()
+print("my_list =", my_list)
+
+# What will display the next secvence of code?
+# >>> programming_language = "Python"
+# >>> lista(programming_language)
+
+programming_language = "Python"
+print(list(programming_language))
+
+#  What will display the next secvent of code?
+# >>> my_list = [8, 17, 14, -8, 99, -25]
+# >>> max(my_list) + min(my_list)
+
+my_list = [8, 17, 14, -8, 99, -25]
+print(max(my_list) + min(my_list))
+
+# Which is the correct sintaxa to extract the element that is equal to "your name"
+# >>> my_list = [8, 15, [23,14,69,[46,15,'your name']]]
+
+my_list = [8, 15, [23, 14, 69, [46, 15, 'your name']]]
+print("the wanted element =", my_list[2][3][2])

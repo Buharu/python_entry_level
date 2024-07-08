@@ -1,0 +1,17 @@
+Here you will find all the git commands that I use to success add the file on my repozitory
+"cd" - it show you the current directory
+"ls" - it show you an a list all the files and directories that exist in the current directory
+"git add" - will add your file that you meantion to the current commit  
+"git status" - will give you the details necessary to understand which is the status:
+        example:
+            if you used the command "git add" the status will be:
+            On branch main
+            Your branch is up to date with 'origin/main'.
+
+            Changes to be committed:
+            (use "git restore --staged <file>..." to unstage)
+                    modified:   __init__.py
+
+            Untracked files:
+            (use "git add <file>..." to include in what will be committed)
+                    git.txt
