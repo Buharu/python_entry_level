@@ -41,5 +41,8 @@ On the "variables" package could be found example for:
    - aggregation functions: <b>min, max, verification of an element in a set</b>
    - update functions: <b>add, update, remove, discard, pop</b> 
    - <b>error handel</b>
-   - Crowd Operations: union, intersection, difference
-
+   - Crowd Operations: <b>union, intersection, difference</b>
+ - dictonary:
+   - create an empty dictonary with "dict()" function
+   - <b>type and len</b> functions
+   - 

@@ -1,3 +1,8 @@
+# a set variable is a collection of data, that are unordered, unchangeable and unindexed
+# unordered - that means after every run, the result will be random
+# unchangeable - we can't change an element. The error that will be rise is TypeError
+# unindexed - we can't access the element with the help of the index. The error that will be rise is KeyError  
+
 my_set = set() # initilize an empty set
 my_set = {0, 1, 2, 3, 4, 5} # when you want to build a set you must build with 
 
@@ -17,7 +22,7 @@ print(len(my_new_set)) # to findout the length of the set: 5
 # the element of a set can't be access by index 
 try:
     print(my_new_set[1])
-except: 
+except TypeError: 
     "You can't access an element by index"
 
 # if you want to access the elements of a set you can use "For" statment:
@@ -29,7 +34,13 @@ print("The max value from the set is:", max(my_new_set))
 
 print("The min value from the set is:", min(my_new_set))
 
-print("The value 1 is in set?", 1 in my_new_set, ", but 6?", 6 in my_new_set)
+is_1_in_my_new_set = 1 in my_new_set # return a boolean value
+is_6_in_my_new_set = 6 in my_new_set # return a boolean value
+print("The value 1 is in set?", is_1_in_my_new_set, ", but 6?", is_6_in_my_new_set)
+
+is_1_in_my_new_set = 1 not in my_new_set # return a boolean value
+
+print("The value 1 isn't in set?", is_1_in_my_new_set, ", but 6?", is_6_in_my_new_set)
 
 # Update operations:
 my_set_3 = {1, 2, 3}
@@ -48,7 +59,7 @@ print("my_set_3:", my_set_3)
 
 try:
     my_set_3.remove(1) # if you try to remove a value that don't exist will give you an error
-except:
+except KeyError:
     print("The element don't exist in set")
 
 print("my_set_3:", my_set_3)

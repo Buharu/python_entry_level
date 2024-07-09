@@ -1,4 +1,5 @@
-# a tuple is a collection of data, list a list from other language, but the difference is that are unchangeable
+# a tuple is a collection of data, as a list from other language, but the difference is that are unchangeable
+# unchangeable - we can't change an element. The error that will be rise is IndexError
 
 tuple_1 = () # construction of an empty tuple
 tuple_1 = tuple() # it has the same effect like "tuple_1 = ()", initialize an empty tuple
