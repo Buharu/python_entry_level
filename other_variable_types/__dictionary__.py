@@ -93,3 +93,28 @@ for val in stocks.values():
 # 3. item
 for val in stocks.items():
     print(val)
+
+# Which is the sintax to display the value of the key "max_volume"?
+vehicle_info = {'length': 4587, 'width': 1892, 'wheels': 4, 'year': 2022, 'trunk': {'min_volume': 612, 'max_volume': 1065}}
+print(vehicle_info['trunk']['max_volume'])
+
+# Update the item with the key equal to 'GOOG' from dictionary
+stocks = {'GOOG': 891, 'AAPL': 415, 'IBM': 345}
+stocks['GOOG'] = 931
+print(stocks)
+
+# What value does the item with key = 'strawberries' have?
+fruits_prices = {'apples': 4.99, 'bananas': 8.75, 'strawberries': 28.99, 'oranges': 10.99}
+print(fruits_prices['strawberries'])
+
+# How make update of a dictionary?
+fruits_prices.update({'apples': 5.99, 'oranges': 11.99, 'pineapple': 14.19, 'plums': 6.75})
+print(fruits_prices)
+
+# How can you access the 'HP' of 'Skoda'?
+cars = {'Toyota': {'Year':2022, 'Fuel_type': 'Gasoline', 'HP': 135},
+        'Skoda': {'Year': 2019, 'Fuel_type': 'Gasoline', 'HP': 110}}
+print(cars['Skoda']['HP'])
+
+# Remove item with key kiwi from fruits_prices if doesn't exist return -100
+print(fruits_prices.pop('kiwi', -100))

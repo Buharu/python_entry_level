@@ -85,3 +85,35 @@ print("crowd_intersetion:", crowd_intersetion)
 
 crowd_difference = crowd_a.difference(crowd_b) # will return the values that are present only in A
 print("crowd_difference:", crowd_difference)
+
+
+# Which is the sum of the unique value from the next set?
+new_set = set([5, 6, 3, 5, 6, 10, 2, 7, 7, 4, 2, 10, 10, 1, 9, 10, 5, 2, 2, 8, 10, 6, 5, 1, 7, 6, 7, 3, 3, 2, 7, 5, 10, 6, 3, 5, 10, 1, 4, 3, 4, 1, 1, 1, 9, 9, 3, 7, 8, 9, 9, 5, 10, 7, 6, 1, 10, 3, 4, 4, 9, 9, 3, 6, 9, 7, 7, 7, 1, 4, 2, 2, 1, 7, 2, 7, 9, 4, 6, 7, 4, 9, 4, 3, 2, 4, 10, 6, 10, 9, 9, 9, 9, 3, 10, 1, 10, 1, 5, 9])
+sum = 0
+for i in new_set:
+    sum += i
+print("sum =", sum)
+
+# How can you union 2 set?
+a = {5, 6, 7}
+b = {7, 8, 9, 10}
+print(a.union(b)) 
+
+# How can you make intersection of a and b?
+print(a.intersection(b))
+
+# Which is the result of difference of a with b?
+print(a.difference(b))
+
+# remove the element '4' from my_set
+my_set ={23, 15, 2.3, '4'}
+my_set.remove('4')
+print(my_set) #{23, 15, 2.3}
+
+# Do you can insert the element 33 in set_1 on index 2?
+set_1 = {45, 77, 23}
+try:
+    set_1[2] = 33
+except TypeError:
+    print("An element from a set can't be update because set is unchangeable")
+    print("The error that was rise is TypeError")

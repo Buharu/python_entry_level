@@ -62,3 +62,30 @@ try:
 except TypeError:
     print("ERROR: 'tuple' object doesn't support item deletion")
 
+# Which is the value of item with index 4?
+my_tuple = (15, 22, 'opt', [111,22,31], 'zece')
+print(my_tuple[4]) # 'zece'
+
+# Which is the value of item with index 2?
+t = (1, 3, 5)
+print(t[2]) # 5
+
+# What is the displayed value if
+t = t * 3
+print("t = ", t) # (1, 3, 5, 1, 3, 5, 1, 3, 5)
+
+# Which is the value of t if add (6, 7)
+t = (1, 3, 5)
+t = t + (6, 7)
+print("t =", t)
+
+# how can you verify if 3 exist in t?
+exist_3 = 3 in t
+print("exist_3?", exist_3)
+
+# what value will be display if you try to access the index 12 of tuple t?
+t = (11, -3, 'sase', [1, 2, 3], 12)
+try:
+    print(t[12])
+except:
+    print("the index is out of range")

@@ -44,5 +44,11 @@ On the "variables" package could be found example for:
    - Crowd Operations: <b>union, intersection, difference</b>
  - dictonary:
    - create an empty dictonary with "dict()" function
-   - <b>type and len</b> functions
-   - 
+   - <b>type, len, get, pop</b> functions
+   - cross the values, keys and items of dictonary with statement "for"
+   - display a value from a dictonary if you have the key
+   - verification if a key exist in dictonary with <b>in, not in</b>
+   - update and insert items in dictonary
+   - update a value base on a key
+   - extract a value of an dictonary item from other dictonary
+   - <b>error handel</b>
